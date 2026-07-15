@@ -39,6 +39,21 @@
   <p class="note">Each account will show its own total up/down once a clean baseline and net deposits/withdrawals are tracked. Formula: current value − baseline − net deposits + withdrawals.</p>
 </div>
 
+
+<div class="section card">
+  <h2>Performance baselines</h2>
+  <table>
+    <thead><tr><th>Account</th><th>Performance start date</th><th>Baseline rule</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td>Main</td><td>Pending first clean EOD snapshot</td><td>Starts from first verified live account value after dashboard tracking begins</td><td><span class="pill">Pending baseline</span></td></tr>
+      <tr><td>Agentic</td><td>Starts when funds become tradable</td><td>Do not start performance clock from pending deposit; start when buying power is live</td><td>Not launched</td></tr>
+      <tr><td>Income</td><td>Starts at first Income deposit/position</td><td>Track yield, current value, deposits, withdrawals, and distributions separately</td><td>Not funded</td></tr>
+      <tr><td>Crypto</td><td>Starts at first crypto transfer/position</td><td>Spot-only sleeve; track net deposits and current spot holdings</td><td>Not funded</td></tr>
+    </tbody>
+  </table>
+  <p class="note">Historical performance will begin from these baselines. Older activity will not be backfilled unless manually entered, so the monthly history stays honest instead of invented.</p>
+</div>
+
 <div class="section card">
   <h2>Monthly performance history</h2>
   <table>
