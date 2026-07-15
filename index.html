@@ -28,14 +28,28 @@
 <div class="section card">
   <h2>Account sleeves</h2>
   <table>
-    <thead><tr><th>Sleeve</th><th>Status</th><th>Purpose</th><th>Public metric</th></tr></thead>
+    <thead><tr><th>Sleeve</th><th>Status</th><th>Purpose</th><th>Up/down</th><th>Avg daily</th></tr></thead>
     <tbody>
-      <tr><td>Main</td><td><span class="pill">Active</span></td><td>Long-term/manual holdings and transition sleeve</td><td>Position tracking</td></tr>
-      <tr><td>Agentic</td><td><span class="pill">Pending launch</span></td><td>Rules-based growth sandbox</td><td>Performance clock starts when tradable</td></tr>
-      <tr><td>Income</td><td><span class="pill">Building</span></td><td>Yield-only income ETF sleeve</td><td>Monthly income and current yield</td></tr>
-      <tr><td>Crypto</td><td><span class="pill">Planned</span></td><td>Spot-only crypto sleeve</td><td>BTC/ETH-first allocation</td></tr>
+      <tr><td>Main</td><td><span class="pill">Active</span></td><td>Long-term/manual holdings and transition sleeve</td><td><span class="pill">Pending baseline</span></td><td><span class="pill">Pending</span></td></tr>
+      <tr><td>Agentic</td><td><span class="pill">Pending launch</span></td><td>Rules-based growth sandbox</td><td>Not launched</td><td>Not launched</td></tr>
+      <tr><td>Income</td><td><span class="pill">Building</span></td><td>Yield-only income ETF sleeve</td><td><span class="pill">Pending first deposit</span></td><td><span class="pill">Pending</span></td></tr>
+      <tr><td>Crypto</td><td><span class="pill">Planned</span></td><td>Spot-only crypto sleeve</td><td><span class="pill">Pending funding</span></td><td><span class="pill">Pending</span></td></tr>
     </tbody>
   </table>
+</div>
+
+<div class="section card">
+  <h2>Separate account performance</h2>
+  <table>
+    <thead><tr><th>Account</th><th>Starting baseline</th><th>Current value</th><th>Net deposits after baseline</th><th>Total up/down</th><th>Avg daily return</th></tr></thead>
+    <tbody>
+      <tr><td>Main</td><td>Needs clean baseline</td><td>Cached/private</td><td>Needs tracking</td><td><span class="pill">Pending</span></td><td><span class="pill">Pending</span></td></tr>
+      <tr><td>Agentic</td><td>Starts when funds become tradable</td><td>$0 public</td><td>Pending launch</td><td>Not launched</td><td>Not launched</td></tr>
+      <tr><td>Income</td><td>Starts at first Income deposit</td><td>$0 public</td><td>Pending funding</td><td>Not funded</td><td>Not funded</td></tr>
+      <tr><td>Crypto</td><td>Starts at first crypto transfer</td><td>$0 public</td><td>Pending funding</td><td>Not funded</td><td>Not funded</td></tr>
+    </tbody>
+  </table>
+  <p class="note">Each account will show its own total up/down once a clean baseline and net deposits/withdrawals are tracked. Formula: current value − baseline − net deposits + withdrawals.</p>
 </div>
 
 <div class="section card">
@@ -53,7 +67,7 @@
   <h2>Strategy rules</h2>
   <p class="note"><strong>Income:</strong> every Income holding must pay distributions. Core candidates: SVOL, YMAX, YMAG, then NVDY/AMZY/GOOY as quality-underlying boosters. Headline yield is last; underlying strength and NAV survival come first.</p>
   <p class="note"><strong>Crypto:</strong> spot only. No futures, no perps, no leverage, no shorts. BTC first, ETH second, LINK/SOL tactical only when signals justify it.</p>
-  <p class="note"><strong>Return tracking:</strong> total return and average daily return require daily snapshots plus net deposits/withdrawals. This dashboard will be upgraded once the live data refresh pipeline is connected.</p>
+  <p class="note"><strong>Return tracking:</strong> each account gets its own up/down line. Total return and average daily return require daily snapshots plus net deposits/withdrawals, so we avoid fake performance numbers until a clean baseline exists.</p>
 </div>
 
 <div class="footer">Built by Prometheus for Degen Club with Chase. Educational tracking only — not financial advice.</div>
