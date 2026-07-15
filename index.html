@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Agentic Degen Club Dashboard</title>
+<style>
+:root{--bg:#070b12;--card:#0f1724;--text:#eaf2ff;--muted:#8fa4bd;--green:#32d583;--yellow:#ffd166;--blue:#5cc8ff;--border:#223247}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top left,#14213a 0,#070b12 42%);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,sans-serif;color:var(--text);padding:24px}.wrap{max-width:1120px;margin:auto}header{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin-bottom:22px}.title h1{margin:0;font-size:34px;letter-spacing:-.04em}.title p{margin:8px 0 0;color:var(--muted);line-height:1.4}.badge{border:1px solid var(--border);background:rgba(17,29,46,.85);border-radius:999px;padding:8px 12px;color:var(--yellow);font-size:13px;white-space:nowrap}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:18px}.card{background:linear-gradient(180deg,rgba(17,29,46,.95),rgba(10,16,26,.95));border:1px solid var(--border);border-radius:18px;padding:16px;box-shadow:0 14px 35px rgba(0,0,0,.24)}.metric-label{color:var(--muted);font-size:13px}.metric-value{font-size:28px;font-weight:800;margin-top:6px;letter-spacing:-.04em}.metric-sub{color:var(--muted);font-size:12px;margin-top:4px}.green{color:var(--green)}.yellow{color:var(--yellow)}.blue{color:var(--blue)}table{width:100%;border-collapse:collapse;overflow:hidden;border-radius:14px}th,td{padding:12px 10px;border-bottom:1px solid #203046;text-align:left;font-size:14px}th{color:#b9c7d8;background:#101a2a;font-weight:700}td{color:#e8f1ff}.section{margin:18px 0}.section h2{font-size:19px;margin:0 0 10px}.pill{display:inline-block;padding:3px 8px;border-radius:999px;background:#17263a;border:1px solid #2a3e58;color:#cfe3ff;font-size:12px}.note{color:var(--muted);line-height:1.45}.footer{margin-top:22px;color:var(--muted);font-size:12px}.warn{border-color:#634c14;background:rgba(255,209,102,.08)}@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}header{display:block}.badge{display:inline-block;margin-top:12px}}@media(max-width:560px){body{padding:14px}.grid{grid-template-columns:1fr}th,td{font-size:12px;padding:9px 7px}.metric-value{font-size:23px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="title">
+    <h1>Agentic Degen Club Dashboard</h1>
+    <p>Public-safe portfolio dashboard: account sleeves, income progress, and spot-crypto plan. Private account numbers and sensitive details are intentionally excluded.</p>
+  </div>
+  <div class="badge">Prototype · manually updated</div>
+</header>
+
+<div class="grid">
+  <div class="card"><div class="metric-label">Active sleeves</div><div class="metric-value">4</div><div class="metric-sub">Main · Agentic · Income · Crypto</div></div>
+  <div class="card"><div class="metric-label">Income goal</div><div class="metric-value blue">$100/mo</div><div class="metric-sub">Early proof milestone</div></div>
+  <div class="card"><div class="metric-label">Current income estimate</div><div class="metric-value green">~$4.81/mo</div><div class="metric-sub">From current TSLY test position; variable</div></div>
+  <div class="card warn"><div class="metric-label">Avg daily return</div><div class="metric-value yellow">Pending</div><div class="metric-sub">Starts after daily snapshots are wired</div></div>
+</div>
+
+<div class="section card">
+  <h2>Account sleeves</h2>
+  <table>
+    <thead><tr><th>Sleeve</th><th>Status</th><th>Purpose</th><th>Public metric</th></tr></thead>
+    <tbody>
+      <tr><td>Main</td><td><span class="pill">Active</span></td><td>Long-term/manual holdings and transition sleeve</td><td>Position tracking</td></tr>
+      <tr><td>Agentic</td><td><span class="pill">Pending launch</span></td><td>Rules-based growth sandbox</td><td>Performance clock starts when tradable</td></tr>
+      <tr><td>Income</td><td><span class="pill">Building</span></td><td>Yield-only income ETF sleeve</td><td>Monthly income and current yield</td></tr>
+      <tr><td>Crypto</td><td><span class="pill">Planned</span></td><td>Spot-only crypto sleeve</td><td>BTC/ETH-first allocation</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="section card">
+  <h2>Income monitor</h2>
+  <table>
+    <thead><tr><th>Position/theme</th><th>Cadence</th><th>Est. monthly income</th><th>Risk rule</th></tr></thead>
+    <tbody>
+      <tr><td>TSLY test position</td><td>Weekly</td><td class="green">~$4.81</td><td>Watch TSLA underlying first; payout is variable and not guaranteed.</td></tr>
+      <tr><td>Future Income core</td><td>Weekly/monthly</td><td>Target: ~$100/mo per ~$2,900 tranche</td><td>Yield-only holdings; protect principal if underlying breaks.</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="section card">
+  <h2>Strategy rules</h2>
+  <p class="note"><strong>Income:</strong> every Income holding must pay distributions. Core candidates: SVOL, YMAX, YMAG, then NVDY/AMZY/GOOY as quality-underlying boosters. Headline yield is last; underlying strength and NAV survival come first.</p>
+  <p class="note"><strong>Crypto:</strong> spot only. No futures, no perps, no leverage, no shorts. BTC first, ETH second, LINK/SOL tactical only when signals justify it.</p>
+  <p class="note"><strong>Return tracking:</strong> total return and average daily return require daily snapshots plus net deposits/withdrawals. This dashboard will be upgraded once the live data refresh pipeline is connected.</p>
+</div>
+
+<div class="footer">Built by Prometheus for Agentic Degen Club. Educational tracking only — not financial advice.</div>
+</div>
+</body>
+</html>
